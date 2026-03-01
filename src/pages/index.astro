@@ -57,12 +57,12 @@ const freeTools = [
   {
     name: 'OGP工房',
     description: 'SNSシェア用のOGP画像を無料で生成。6種類のデザインテンプレート。',
-    link: '#',
+    link: 'https://ogp-koubou.vercel.app',
   },
   {
     name: 'LINEスタンプメーカー',
     description: '画像をアップロードするだけ。背景透過＆LINE規格のZIPを自動生成。',
-    link: '#',
+    link: 'https://line-stamp-creator.vercel.app',
   },
   {
     name: 'サムネ職人',
@@ -82,12 +82,12 @@ const freeTools = [
 ];
 ---
 
-<Layout title="AI Creator Lab — AIクリエイターのためのテンプレート & ツール">
+<Layout title="Apeiron — AIテンプレート & ツール">
   <!-- Navigation -->
   <nav class="fixed top-0 w-full z-50 bg-gray-950/80 backdrop-blur-xl border-b border-gray-800/50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-        AI Creator Lab
+      <a href="#" class="text-xl font-bold tracking-wider">
+        <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">APEIRON</span>
       </a>
       <div class="flex gap-6 text-sm text-gray-400">
         <a href="#products" class="hover:text-white transition">Products</a>
@@ -99,23 +99,23 @@ const freeTools = [
 
   <!-- Hero -->
   <section class="relative min-h-[80vh] flex items-center justify-center pt-20 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-950/50 via-gray-950 to-purple-950/50"></div>
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-cyan-950/40 via-gray-950 to-blue-950/40"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/8 rounded-full blur-3xl"></div>
 
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-      <p class="text-blue-400 text-sm font-medium tracking-widest mb-4 uppercase">AI Creator Lab</p>
+      <p class="text-cyan-400 text-sm font-medium tracking-[0.3em] mb-4 uppercase">Apeiron</p>
       <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-        <span class="bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
-          AIで、動画制作を革命する
+        <span class="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
+          無限の創造を、<br class="hidden md:block" />あなたの手に
         </span>
       </h1>
       <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-        プログラマティック動画テンプレート & AIツール活用ガイド。<br />
-        非エンジニアでもプロ品質の動画を量産できる時代へ。
+        AI動画テンプレート・ワークフローガイド・プロンプト集。<br />
+        プロ品質のコンテンツ制作を、誰でも実現できる環境を。
       </p>
-      <a href="#products" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40">
-        商品を見る
+      <a href="#products" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold rounded-full transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40">
+        プロダクトを見る
       </a>
     </div>
   </section>
@@ -124,23 +124,23 @@ const freeTools = [
   <section id="products" class="py-24 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <p class="text-blue-400 text-sm font-medium tracking-widest mb-3 uppercase">Products</p>
+        <p class="text-cyan-400 text-sm font-medium tracking-[0.3em] mb-3 uppercase">Products</p>
         <h2 class="text-4xl font-black mb-4">デジタルプロダクト</h2>
         <p class="text-gray-400 max-w-xl mx-auto">Remotion動画テンプレート、AIワークフローガイド、プロンプト集</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
-          <a href={product.link} class="group block bg-gray-900/50 border border-gray-800/50 rounded-2xl p-6 hover:border-blue-500/30 hover:bg-gray-900/80 transition-all duration-300 hover:-translate-y-1">
+          <a href={product.link} class="group block bg-gray-900/50 border border-gray-800/50 rounded-2xl p-6 hover:border-cyan-500/30 hover:bg-gray-900/80 transition-all duration-300 hover:-translate-y-1">
             <div class="flex items-center justify-between mb-4">
               <span class={`text-xs px-3 py-1 rounded-full font-medium ${product.tagColor}`}>
                 {product.tag}
               </span>
             </div>
-            <h3 class="text-lg font-bold mb-2 group-hover:text-blue-300 transition">{product.name}</h3>
+            <h3 class="text-lg font-bold mb-2 group-hover:text-cyan-300 transition">{product.name}</h3>
             <p class="text-sm text-gray-400 mb-4 leading-relaxed">{product.description}</p>
             <div class="flex items-end gap-2">
-              <span class={`text-2xl font-black ${product.price === '無料' ? 'text-rose-400' : 'bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent'}`}>
+              <span class={`text-2xl font-black ${product.price === '無料' ? 'text-rose-400' : 'bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent'}`}>
                 {product.price}
               </span>
               {product.originalPrice && (
@@ -157,14 +157,14 @@ const freeTools = [
   <section id="tools" class="py-24 px-4 bg-gray-900/30">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <p class="text-green-400 text-sm font-medium tracking-widest mb-3 uppercase">Free Tools</p>
+        <p class="text-green-400 text-sm font-medium tracking-[0.3em] mb-3 uppercase">Free Tools</p>
         <h2 class="text-4xl font-black mb-4">無料AIツール</h2>
         <p class="text-gray-400 max-w-xl mx-auto">すべて無料で使えるWebツール。登録不要。</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {freeTools.map((tool) => (
-          <a href={tool.link} class="group flex items-start gap-4 bg-gray-900/50 border border-gray-800/50 rounded-xl p-5 hover:border-green-500/30 hover:bg-gray-900/80 transition-all duration-300">
+          <a href={tool.link} target={tool.link !== '#' ? '_blank' : undefined} rel={tool.link !== '#' ? 'noopener noreferrer' : undefined} class="group flex items-start gap-4 bg-gray-900/50 border border-gray-800/50 rounded-xl p-5 hover:border-green-500/30 hover:bg-gray-900/80 transition-all duration-300">
             <div class="shrink-0 w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center">
               <span class="text-green-400 text-lg">&#9889;</span>
             </div>
@@ -181,16 +181,19 @@ const freeTools = [
   <!-- About -->
   <section id="about" class="py-24 px-4">
     <div class="max-w-3xl mx-auto text-center">
-      <p class="text-purple-400 text-sm font-medium tracking-widest mb-3 uppercase">About</p>
-      <h2 class="text-4xl font-black mb-8">AI Creator Lab について</h2>
+      <p class="text-blue-400 text-sm font-medium tracking-[0.3em] mb-3 uppercase">About</p>
+      <h2 class="text-4xl font-black mb-8">Apeiron について</h2>
+      <p class="text-gray-400 leading-loose text-lg mb-4">
+        「Apeiron」— 古代ギリシャ語で「無限なるもの」。
+      </p>
       <p class="text-gray-400 leading-loose text-lg mb-8">
-        AIツールを駆使して動画・Webコンテンツを制作するクリエイターが運営しています。<br />
-        「非エンジニアでもプロ品質のコンテンツが作れる」をテーマに、<br />
-        実際の制作現場で使っているテンプレートやノウハウを公開しています。
+        AIの力で、コンテンツ制作の可能性を無限に広げる。<br />
+        実際の制作現場で使い込んだテンプレートやノウハウを<br />
+        誰でも使える形にして提供しています。
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#products" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition-all">
-          商品一覧を見る
+        <a href="#products" class="px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold rounded-full hover:from-cyan-500 hover:to-blue-500 transition-all">
+          プロダクト一覧を見る
         </a>
       </div>
     </div>
@@ -199,7 +202,7 @@ const freeTools = [
   <!-- Footer -->
   <footer class="border-t border-gray-800/50 py-8 px-4">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-      <p>&copy; 2026 AI Creator Lab</p>
+      <p>&copy; 2026 Apeiron</p>
       <div class="flex gap-6">
         <a href="#products" class="hover:text-gray-300 transition">Products</a>
         <a href="#tools" class="hover:text-gray-300 transition">Free Tools</a>
